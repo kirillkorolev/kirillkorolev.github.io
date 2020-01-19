@@ -1,0 +1,14 @@
+.page-main {
+  height: calc(100vh - 68px);
+}
+
+@media (max-width: $mobile-width) {
+  .page-main {
+    height: calc(100vh - 60px);
+
+    &--catalog {
+      height: 100%;
+      position: relative;
+    }
+  }
+}

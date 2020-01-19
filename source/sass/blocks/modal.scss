@@ -1,0 +1,174 @@
+.modal {
+  &--hidden {
+    display: none;
+  }
+
+  width: 500px;
+  background-color: $white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1500;
+  padding: 20px;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  animation-name: show;
+  animation-duration: 0.55s;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-150%, -50%);
+  }
+
+  25% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-75%, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal__close {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  right: -50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal__close span::before,
+.modal__close span::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: $yellow;
+  top: 17px;
+  left: 7px;
+}
+
+.modal__close span::before {
+  transform: rotate(-45deg);
+}
+
+.modal__close span::after {
+  transform: rotate(45deg);
+}
+
+.modal__close:hover span::before,
+.modal__close:hover span::after {
+  background-color: $orange;
+}
+
+.modal__close:active span::before,
+.modal__close:active span::after {
+  opacity: 0.7;
+}
+
+.modal__link {
+  color: $navy;
+  position: relative;
+  transition: all 0.6s;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 50px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+.modal__link::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: $navy;
+  transition: all 0.3s;
+}
+
+.modal__link:hover::before {
+  width: 100%;
+  left: 0;
+  background-color: $orange;
+}
+
+.modal__link:hover {
+  color: $orange;
+}
+
+.modal__link:active,
+.modal__link:active::before {
+  opacity: 0.7;
+}
+
+.modal__icon {
+  color: $navy;
+}
+
+.modal__social-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal__social-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid $navy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__social-link:hover {
+  border-color: $orange;
+}
+
+.modal__social-link:hover .modal__icon {
+  color: $orange;
+}
+
+.modal__social-link:active {
+  opacity: 0.7;
+}
+
+.modal__social-item:not(:last-child) {
+  margin-right: 7px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal {
+    width: 100%;
+    padding: 15% 9%;
+    top: 30%;
+  }
+
+  .modal__close {
+    top: 5px;
+    right: 10px;
+  }
+
+  .modal__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

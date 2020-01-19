@@ -1,0 +1,51 @@
+.social {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.social__icon {
+  color: $white;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__item {
+  &--github {
+    .social__link {
+      height: 24px;
+    }
+  }
+
+  &--tg {
+    .social__link {
+      height: 14px;
+    }
+  }
+
+  &--mail {
+    .social__link {
+      height: 14px;
+    }
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__item:hover .social__icon {
+  color: $yellow;
+}
+
+.social__item:active {
+  opacity: 0.7;
+}
+
+@media (max-width: $mobile-width) {
+  .social__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
