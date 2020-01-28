@@ -29,13 +29,15 @@
   transition: all 0.3s;
 }
 
-.page-header__logo-link[href]:hover::before {
+.page-header__logo-link[href]:hover::before,
+.page-header__logo-link[href]:focus::before {
   width: 100%;
   left: 0;
   background: $yellow;
 }
 
-.page-header__logo-link[href]:hover {
+.page-header__logo-link[href]:hover,
+.page-header__logo-link[href]:focus {
   color: $yellow;
 }
 
@@ -152,7 +154,8 @@
         transition: top 0.3s 0.3s, transform 0.3s;
       }
 
-      .page-header__button:hover span {
+      .page-header__button:hover span,
+      .page-header__button:focus span {
         background-color: $yellow;
       }
 
@@ -163,7 +166,9 @@
   }
 
   .page-header__button:hover span::before,
-  .page-header__button:hover span::after {
+  .page-header__button:hover span::after,
+  .page-header__button:focus span::before,
+  .page-header__button:focus span::after {
     background-color: $yellow;
   }
 

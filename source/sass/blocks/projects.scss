@@ -22,15 +22,16 @@
   display: flex;
   max-width: 1000px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .projects__item {
-  width: 34%;
+  width: 32%;
   margin-bottom: 10px;
 }
 
 .projects__item:not(:last-child) {
-  margin-right: 3%;
+  margin-right: 10px;
 }
 
 .projects__title {
@@ -88,7 +89,7 @@
   font-size: 16px;
   line-height: 18px;
   display: inline-block;
-  margin-top: 40%;
+  margin-top: 37%;
   margin-left: 50%;
   color: $yellow;
 }
@@ -112,7 +113,8 @@
   color: $yellow;
 }
 
-.projects__source-code:hover {
+.projects__source-code:hover,
+.projects__source-code:focus {
   color: $orange;
   text-decoration: underline;
 }

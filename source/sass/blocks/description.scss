@@ -46,7 +46,8 @@
   margin-right: 20px;
 }
 
-.description__link:hover {
+.description__link:hover,
+.description__link:focus {
   background-color: $orange;
 }
 
@@ -68,9 +69,11 @@
   text-transform: uppercase;
   color: $white;
   cursor: pointer;
+  outline: none;
 }
 
-.description__button:hover {
+.description__button:hover,
+.description__button:focus {
   background-color: $pupple-hover;
 }
 

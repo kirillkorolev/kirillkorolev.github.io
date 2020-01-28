@@ -10,33 +10,15 @@
 
 .social__link {
   display: block;
-}
-
-.social__item {
-  &--github {
-    .social__link {
-      height: 24px;
-    }
-  }
-
-  &--tg {
-    .social__link {
-      height: 14px;
-    }
-  }
-
-  &--mail {
-    .social__link {
-      height: 14px;
-    }
-  }
+  height: 24px;
 }
 
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social__item:hover .social__icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   color: $yellow;
 }
 

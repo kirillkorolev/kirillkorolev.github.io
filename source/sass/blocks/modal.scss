@@ -73,7 +73,9 @@
 }
 
 .modal__close:hover span::before,
-.modal__close:hover span::after {
+.modal__close:hover span::after,
+.modal__close:focus span::before,
+.modal__close:focus span::after {
   background-color: $orange;
 }
 
@@ -104,13 +106,15 @@
   transition: all 0.3s;
 }
 
-.modal__link:hover::before {
+.modal__link:hover::before,
+.modal__link:focus::before {
   width: 100%;
   left: 0;
   background-color: $orange;
 }
 
-.modal__link:hover {
+.modal__link:hover,
+.modal__link:focus {
   color: $orange;
 }
 
@@ -139,11 +143,13 @@
   align-items: center;
 }
 
-.modal__social-link:hover {
+.modal__social-link:hover,
+.modal__social-link:focus {
   border-color: $orange;
 }
 
-.modal__social-link:hover .modal__icon {
+.modal__social-link:hover .modal__icon,
+.modal__social-link:focus .modal__icon {
   color: $orange;
 }
 
