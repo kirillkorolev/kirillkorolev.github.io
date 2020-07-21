@@ -4,6 +4,8 @@
   background-size: cover;
   background-position: center 0;
 
+  min-height: 100vh;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/backgrounds/background@2x.png");
   }

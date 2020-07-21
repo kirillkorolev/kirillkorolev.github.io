@@ -1,12 +1,12 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "Kirill-Korolev-start-template",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "portfolio",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "eslint": "4.16.0",
+    "eslint": "7.3.0",
     "eslint-config-htmlacademy": "0.4.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
