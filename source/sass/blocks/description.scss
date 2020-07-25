@@ -44,7 +44,6 @@
   font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   margin-right: 20px;
-  position: relative;
   box-shadow: 0 4px 0 $dark-grey;
   transition-duration: 300ms;
   position: relative;
@@ -54,7 +53,7 @@
 .description__link:hover,
 .description__link:focus {
   background-color: $orange;
-  box-shadow: 0 3px 0px $dark-grey;
+  box-shadow: 0 3px 0 $dark-grey;
   top: 2px;
 }
 
@@ -86,7 +85,7 @@
 .description__button:hover,
 .description__button:focus {
   background-color: $pupple-hover;
-  box-shadow: 0 3px 0px $dark-grey;
+  box-shadow: 0 3px 0 $dark-grey;
   top: 2px;
 }
 
